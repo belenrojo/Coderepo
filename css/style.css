@@ -315,6 +315,18 @@ footer {
 
    }
 
+   .img_a:hover{
+    transform: scale(1.2);
+   }
+
+   .img_b:hover{
+    transform: scale(1.2);
+   }
+
+   .img_c:hover{
+    transform: scale(1.2);
+   }
+
   .img_b {
     width: 60%;
     padding-top: 20px;
@@ -413,6 +425,18 @@ main section {
 
   }
 
+#modelo_a:hover{
+    transform: scale(1.2);
+   }
+
+#modelo_b:hover{
+    transform: scale(1.2);
+   }
+
+#modelo_c:hover{
+    transform: scale(1.2);
+   }
+   
   #mod_a {
     width: 50%;
     text-align: center;
