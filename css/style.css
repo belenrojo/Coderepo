@@ -497,7 +497,7 @@ main section {
 
 }
 
-/* main-grid */  
+/* main-grid-cuadros */  
 
 
 
@@ -508,6 +508,7 @@ main section {
   grid-template-areas: 
   "pri-cuadro seg-cuadro"
 
+
 }
 
 #cuadros{
@@ -516,6 +517,38 @@ main section {
   width: 100%;
   padding: 10px 15px;
   align-content: center;
+}
+
+#cuadros input{
+  background-color: rgb(241, 246, 247);
+  border-bottom: 0,5px rgb(122, 103, 231);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+
+}
+
+#cuadros input:hover{
+  transition: 1 linear;
+  cursor: pointer;
+	background-color: lightblue;
+
+}
+
+#cuadros textarea{
+  background-color: rgb(241, 246, 247);
+  border-bottom: 0,5px rgb(122, 103, 231);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+
+}
+
+#cuadros textarea:hover {
+  transition: 1 linear;
+  cursor: pointer;
+	background-color: lightblue;
+
 }
 
 
