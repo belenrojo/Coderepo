@@ -35,7 +35,7 @@ body div p {
 }
 
 nav { 
-     background-color: rgb(253, 252, 220);
+     background: linear-gradient(to top, rgb(252, 237, 237), rgb(0, 175, 185));
      position: sticky;
      display: flex;
      justify-content: space-between;
@@ -63,12 +63,14 @@ nav ul {
    padding: 10px 20px;
    justify-content: space-between;
    align-items: center;
+   
 
 }
 
 nav ul li {
   list-style: none;
   margin-right: 20px;
+  
 }
 
 header img {
