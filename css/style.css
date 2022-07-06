@@ -1,30 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); 
 
-body{
-  margin: 10px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows:20vh 100vh 70vh 15vh ;
-  grid-template-areas: 
-  "nav"
-  "img-header"
-  "contenido-a"
-  "pie-b";
-}
 
-@media only screen and (max-width: 420px) {
-  body {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    /* grid-template-areas: 
-    "nav nav"
-    "img-header img-header"
-    "contenido-a contenido-a"
-    "pie-b pie-b"; */
-  }
 
- }
-  
+
 
 body div p {
 
@@ -39,7 +17,7 @@ nav {
      position: sticky;
      display: flex;
      justify-content: space-between;
-     align-items: center;
+     justify-content: flex-end;
      grid-area: nav;
 
 }
