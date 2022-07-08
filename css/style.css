@@ -123,30 +123,22 @@ header img {
 
   }
   
-.section-novedades {
-   justify-content: space-between;
-   display: grid;
-   grid-template-columns: 300px 300px 300px;
-   grid-template-rows: 500px;
-   grid-template-areas: "a1 a2 a3";
+.articulos-s {
+  overflow: hidden;
+  flex-wrap: wrap-reverse;
+
 }
 
-#articulo-1 {
-grid-area: a1;
-}
-#articulo-2{
-  grid-area: a2;
+#card{
+  float: left;
+  justify-items: auto;
 }
 
-#articulo-3{
-  grid-area: a3;
-}
+
 footer {
     background-color: rgb(240, 113, 103);
     margin: 5px 10px;
     padding: 1px 10px;
-    position: sticky;
-    display: flex;
     align-items: center;
     color: rgba(253, 254, 255, 0.986);
     grid-area: pie-b;
