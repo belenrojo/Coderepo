@@ -123,16 +123,49 @@ header img {
 
   }
   
+.titulo-novedades {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 2em;
+     color: rgb(0, 175, 185);
+     text-align: center; 
+     padding: 10px 10px;
+     margin: 10px 10px;
+     width: 90%;
+
+}
+
 .articulos-s {
-  overflow: hidden;
-  flex-wrap: wrap-reverse;
+  display: flex;
+  justify-content: space-between;
+
 
 }
 
-#card{
-  float: left;
-  justify-items: auto;
+#card-1{
+  width: 20%;
+  margin: 50px;
+  padding-left: 30px;
+  display: inline-flex;
+
+
 }
+
+#card-2{
+  width: 100%;
+  margin: 50px;
+  padding-left: 30px;
+  display: inline-flex;
+
+}
+
+#card-3{
+  width: 150%;
+  margin: 50px;
+  padding-left: 30px;
+  display: inline-flex;
+
+}
+
 
 
 footer {
