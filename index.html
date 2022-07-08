@@ -7,12 +7,12 @@
     <link rel="icon" type="image/x-icon" href="./imagenes/ps_logo-08.ico">
     <link rel="stylesheet" href="css/style.css">
     <title>Pet shop</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     
 </head>
 <body>
         <!-- inicio nav -->
-        <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
              <a href="href="index.html></a>
               <img src="./imagenes/logo-06-06-08.png" alt="logo"> </a>
@@ -35,14 +35,21 @@
                     <a class="nav-link" href="./views/contacto.html">Contacto</a>
               </div>
             </div>
-          </nav>
+  </nav>
         <!-- fin nav -->
      
-    <header id="header-img">
+  <header id="header-img">
         <img src="./imagenes/p2.jpg" alt="perros paseando">
-    </header>
-    <main class="content">
-      <div id="first_div">
+        <div>
+          <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            </ol>
+          </nav>
+        </div>
+  </header>
+  <main class="content">
+    <div id="first_div">
         <h1 id="titulo-m">MISION</h1>
         <p id="parrafo-m"> Contribuimos a crear un mundo mejor, ayudando a amar y proteger a sus mascotas. 
             Basados en nuestro equipo de trabajo somos solidarios socialmente, 
@@ -51,17 +58,50 @@
                 en proyectos para ampliar la estructura y seguir creciendo en otras ciudades.</span>  
             Aportando y participando solidariamente para crear una comunidad inclusiva 
             y el cuidado del medio ambiente.</p>
-      </div>
-      <div id="second_div">
+    </div>
+    <div id="second_div">
         <h1 id="titulo-v">VISION</h1>
         <p id="parrafo-v">Ser una empresa moderna y sólida, líder en el país y con proyección internacional. 
             Liderada por un equipo con acceso a la más alta calidad de capacitación y con una
              mirada colaborativa e inclusiva.</p>
-      </div>
+    </div>
       <aside id="imagen-bf">
              <img src="./imagenes/imagen2-06.png" alt="bulldog_frances" >
         </aside>
     </main>
+    <section class="section-novedades">
+      <h2>Novedades</h2>
+      <div class="row py-3">
+        <!-- articulo-1 -->
+        <div class="card" style="width: 18rem;" id="articulo-1">
+          <img src="./imagenes/maraton-perros.jpg" class="card-img-top d-block w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Maraton de perros </h5>
+            <p class="card-text">Estuvimos presente en la maraton de perros que organizo el gobierno de Mendoza</p>
+            <a href="https://www.telam.com.ar/notas/202204/591129-maraton-mascotas-mendoza.html" class="btn btn-primary">Go</a>
+        </div>
+        <!-- fin-articulo-1 -->
+        <!-- articulo-2 -->
+        <div class="card" style="width: 18rem;" id="articulo-2">
+          <img src="./imagenes/refugio-de-diego.jpg" class="card-img-top d-block w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Refugio de diego</h5>
+            <p class="card-text">Enterate como Diego se dedica a refugiar perros de las calles y como hacer para ayudarlo</p>
+            <a href="https://viapais.com.ar/guaymallen/el-refugio-de-diego-como-ayudar-a-los-200-perros-y-gatos-de-guaymallen/" class="btn btn-primary">Go </a>
+        </div>
+        <!-- fin-articulo-2 -->
+        <!-- articulo-3 -->
+        <div class="card" style="width: 18rem;" id="articulo-3">
+          <img src="./imagenes/galletas-para-perros.jpg" class="card-img-top d-block w-100" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Galletas para perros</h5>
+            <p class="card-text">Descubri este tutorial para cocinar galletas para tus perros</p>
+            <a href="https://www.youtube.com/watch?v=WkZBvGEk1Zo" class="btn btn-primary">Go </a>
+        </div>
+        <!-- fin-articulo-3 -->
+        </div>
+      </div>
+    </section>
     <footer id="pie">
         <h2>Encontranos en las redes</h2>
         <a href="https://m.facebook.com/login/?locale=es_ES" id="l_f">
@@ -76,5 +116,6 @@
         </p>
 
     </footer>
+   <script src="./js/bootstrap.min.js"></script>
 </body>
 </html>

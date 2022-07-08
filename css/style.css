@@ -122,8 +122,25 @@ header img {
      margin: 10px 10px;
 
   }
+  
+.section-novedades {
+   justify-content: space-between;
+   display: grid;
+   grid-template-columns: 300px 300px 300px;
+   grid-template-rows: 500px;
+   grid-template-areas: "a1 a2 a3";
+}
 
+#articulo-1 {
+grid-area: a1;
+}
+#articulo-2{
+  grid-area: a2;
+}
 
+#articulo-3{
+  grid-area: a3;
+}
 footer {
     background-color: rgb(240, 113, 103);
     margin: 5px 10px;
@@ -298,7 +315,6 @@ footer {
   #ph_a {
     width: 50%;
     text-align: center;
-    margin: 10px 20px;
     padding: 20px 20px;
     grid-area: text-a;
     display: inline; 
