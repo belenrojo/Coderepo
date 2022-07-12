@@ -1,53 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); 
 
 
-body div p {
-
-     background-color: rgba(252, 237, 237, 0.664);
-     width: 100%;
-     text-align: center;
-     padding: 6px 0;
-}
-
-nav { 
-     background-color: rgb(253, 252, 220);
-     display: flex;
-     justify-content: space-between;
-     justify-content: flex-end;
-     grid-area: nav;
+.nav-logo{
+  display: flex;
+  align-items: flex-start;
+  width: 80%;
+  position: relative;
 
 }
 
-#header-img{
-  grid-area: img-header;
-}
-
-
-nav a img {
-     width: 90%;
-     display: inline;
-     align-content: flex-start;
-}
-
-nav ul {
+#navbarSupportedContent {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-size: 15px;
-   display: flex;
-   width: 40%;
-   padding: 10px 20px;
-   justify-content: space-between;
-   align-items: center;
-
-}
-
-nav ul li {
-  list-style: none;
-  margin-right: 20px;
-}
-
-header img {
    width: 100%;
-    
+   padding-left: 200px;
+   align-items: flex-end;
+   margin-right: 100px;
+
+}
+
+#navbarSupportedContent ul li{
+  display: flex;
+  align-items: flex-end;
 }
 
 
@@ -122,88 +96,62 @@ header img {
      margin: 10px 10px;
 
   }
-  
+
+.div-novedades{
+  background-color: rgb(253, 252, 220);
+
+} 
+
 .titulo-novedades {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
      font-size: 2em;
      color: rgb(0, 175, 185);
      text-align: center; 
-     padding: 10px 10px;
+     padding: 20px 10px;
      margin: 10px 10px;
+     margin-bottom: 20px;
      width: 90%;
-
-}
-
-.articulos-s {
-  display: flex;
-  justify-content: space-between;
-
-
-}
-
-#card-1{
-  width: 20%;
-  margin: 50px;
-  padding-left: 30px;
-  display: inline-flex;
-
-
-}
-
-#card-2{
-  width: 100%;
-  margin: 50px;
-  padding-left: 30px;
-  display: inline-flex;
-
-}
-
-#card-3{
-  width: 150%;
-  margin: 50px;
-  padding-left: 30px;
-  display: inline-flex;
-
 }
 
 
 
-footer {
+#pie {
+    width: 100%;
     background-color: rgb(240, 113, 103);
     margin: 5px 10px;
     padding: 1px 10px;
     align-items: center;
     color: rgba(253, 254, 255, 0.986);
     grid-area: pie-b;
+  
 }
 
   #l_f {
-   display: flex;
+   display: inline;
    justify-content: space-between;
    margin-left: 10px;
 
   } 
 
   #l_i{
-   display: flex;
+   display: inline;
    justify-content: space-between;
    margin-left: 10px;
 
   } 
 
   #l_l{
-   display: flex;
+   display: inline;
    justify-content: space-between;
   margin-left: 10px;
 
   } 
 
- 
-  footer p {
-   display: flex;
-   padding: 10px 20px;
-   justify-content: space-between;   
-   margin-right: 20px;     
+  #pie p {
+   display: inline-block;
+   align-items: flex-end;
+   padding: 10px 300px; 
+   margin-left: 100px;    
   }
 
 /* ===================ALIMENTO=================== */
@@ -282,55 +230,58 @@ footer {
   width: 100%;
 }
 
-#padre-cuchas{
-  display: grid;
-  justify-content: center;
-  width: 80%;
-  height: 70%;
-}
 
 #item-cuchas {
+  margin-left: 20px;
+  padding-left: 50px;
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 200px 10px;
+  grid-template-rows: 300px 100px;
   grid-template-areas: 
   "cucha-a cucha-b cucha-c"
-  "text-a tex-b text-c";
+  "text-a text-b text-c";
   justify-items: center;
 
+}
 
+.div-modelos-c{
+  background-color: rgb(253, 252, 220);
 }
 
 .model_titulo {
     color: rgb(0, 175, 185);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
-    flex-direction: row;
-    height: 30px;
-    margin: 10px 2px;
-    padding: 0px 2px;
+    height: 80px;
+    margin: 30px 2px;
+    padding: 20px 20px;
+  
     
 }
 
   .img_a {
-    width: 60%;
+    width: 70%;
     padding-top: 20px;
+    margin-left: 20px;
+
     grid-area: cucha-a;
     display: inline-flex;
 
    }
 
   .img_b {
-    width: 60%;
+    width: 70%;
     padding-top: 20px;
+    margin-left: 20px;
     grid-area: cucha-b;
     display: inline-flex;
 
    }
 
   .img_c {
-    width: 60%;
+    width: 70%;
     padding-top: 20px;
+    margin-left: 20px;
     grid-area: cucha-c;
     display: inline-flex;
     
@@ -338,30 +289,27 @@ footer {
   
   
   #ph_a {
-    width: 50%;
+    width: 60%;
     text-align: center;
-    padding: 20px 20px;
     grid-area: text-a;
-    display: inline; 
-    
+    display: inline-flex; 
 
 
    }
 
   #ph_b {
-    width: 50%;
+    width: 80%;
+    padding-left: 10px;
     text-align: center; 
-    padding: 20px 80px;
     grid-area: text-b;
     display: inline-flex;
 
   }
 
   #ph_c { 
-    width: 50%;
+    width: 80%;
+    padding-left: 10px;
     text-align: center;
-    margin: 10px 20px;
-    padding: 20px 80px;
     grid-area: text-c;
     display: inline-flex;
 
@@ -369,25 +317,33 @@ footer {
 
 /* =====================INDUMENTARIA================== */
 
+.caniche-header{
+  display: inline;
+  justify-items: center;
+  width: 100%;
+}
+
+.div-modelos-i{
+  background-color: rgb(253, 252, 220);
+}
 
 .titulo{
   color: rgb(0, 175, 185);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 25px;
-  height: 30px;
-  margin: 10px 2px;
-  padding: 0px 2px;
+  height: 80px;
+  margin: 30px 2px;
+  padding: 20px 20px;
 
 }
 
-main section {
+main .sector {
   display: grid;
   grid-template-columns: repeat(3 1fr) ;
-  grid-template-rows: 300px 300px ;
+  grid-template-rows: 300px 200px ;
   grid-template-areas: 
   "mod-aa mod-bb mod-cc"
-  "texto-aa texto-bb texto-cc"
- ;
+  "texto-aa texto-bb texto-cc";
 
 } 
 
@@ -395,7 +351,7 @@ main section {
     display: inline; 
     margin: 20px 60px;
     padding: 10px 10px;
-    width: 50%;
+    width: 60%;
     grid-area: mod-aa;
   }
 
@@ -403,7 +359,7 @@ main section {
     display: inline; 
     margin: 20px 60px;
     padding: 10px 10px;
-    width: 50%;
+    width: 60%;
     grid-area: mod-bb;
 
   }
@@ -412,13 +368,13 @@ main section {
     display: inline; 
     margin: 20px 60px;
     padding: 10px 10px;
-    width: 50%;
+    width: 60%;
     grid-area: mod-cc;
 
   }
 
   #mod_a {
-    width: 50%;
+    width: 80%;
     text-align: center;
     margin: 10px 20px;
     padding: 10px 80px;
@@ -428,7 +384,7 @@ main section {
   }
 
   #mod_b {
-    width: 50%;
+    width: 80%;
     text-align: center;
     margin: 10px 20px;
     padding: 10px 100px;
@@ -438,7 +394,7 @@ main section {
   }
 
   #mod_c {
-    width: 50%;
+    width: 70%;
     text-align: center;
     margin: 10px 20px;
     padding: 10px 40px;
@@ -451,8 +407,9 @@ main section {
 #info_contact {
      
     background-color: rgb(240, 113, 103);
-    margin: 100px 0px;
+    margin: 50px 0px;
     padding: 5px 10px;
+    padding-bottom: 20px;
     height:30% ;
     justify-content: center;
 }
@@ -463,12 +420,13 @@ main section {
     font-size: 35px;
     padding: 0px 20px;
     margin: 5px 5px;
+    display: flex;
 }
 
 #nro_publico {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    width: 15%;
+    width: 30%;
     text-align: center;
     margin: 10px 10px;
     padding: 10px 30px;
@@ -480,7 +438,7 @@ main section {
 #nro_whp {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    width: 15%;
+    width: 30%;
     text-align: center;
     margin: 10px 10px;
     padding: 10px 80px;
@@ -492,7 +450,7 @@ main section {
 #horarios{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    width: 22%;
+    width: 30%;
     text-align: center;
     margin: 10px 10px;
     padding: 10px 80px;
@@ -508,7 +466,7 @@ main section {
 #gran-contenedor{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 200px ;
+  grid-template-rows: 650px ;
   grid-template-areas: 
   "pri-cuadro seg-cuadro"
 
@@ -528,7 +486,7 @@ main section {
     color: rgb(0, 175, 185);
     font-size: 30px;
     margin: 5px 20px;
-    padding: 5px 20px;
+    padding-bottom: 20px;
     align-content: center; 
 
 }
@@ -544,7 +502,8 @@ main section {
     color: rgb(0, 175, 185);
     font-size: 30px;
     margin: 5px 20px;
-    padding-left: 200px;
+    padding-left: 150px;
+    padding-bottom: 20px;
     align-content: center;
  
  }
@@ -553,7 +512,8 @@ main section {
     margin: 5px 20px;
     width: 100%;
     align-content: center;
-    padding-left: 200px;
+    padding-left: 20px;
+    padding-right: 100px;
 
  }
 
