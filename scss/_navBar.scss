@@ -76,5 +76,24 @@
         padding: 10px 10px;
         margin: 10px 10px;
     }
+}
+
+.div-novedades{
+        background-color:$mainColor;
+    
+    
+    .titulo-novedades {
+           font-family: $secondaryFont;
+           font-size: $textXl;
+           color: $secondaryColor;
+           text-align: center; 
+           padding: 20px 10px;
+           margin: 10px 10px;
+           margin-bottom: 20px;
+           width: 90%;
+    
+    }
 
 }
+
+
